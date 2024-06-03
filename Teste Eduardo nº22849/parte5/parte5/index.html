@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Atrações Turísticas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/image1.jpg" class="card-img-top" alt="Imagem do Monumento 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Monumento 1</h5>
+                        <p class="card-text hidden" id="desc1">Descrição breve do monumento ou atração turística.</p>
+                        <button class="btn btn-primary" onclick="toggleDescription('desc1')">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/image2.jpg" class="card-img-top" alt="Imagem do Monumento 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Monumento 2</h5>
+                        <p class="card-text hidden" id="desc2">Descrição breve do monumento ou atração turística.</p>
+                        <button class="btn btn-primary" onclick="toggleDescription('desc2')">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/image3.jpg" class="card-img-top" alt="Imagem do Monumento 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Monumento 3</h5>
+                        <p class="card-text hidden" id="desc3">Descrição breve do monumento ou atração turística.</p>
+                        <button class="btn btn-primary" onclick="toggleDescription('desc3')">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/image4.jpg" class="card-img-top" alt="Imagem do Monumento 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Monumento 4</h5>
+                        <p class="card-text hidden" id="desc4">Descrição breve do monumento ou atração turística.</p>
+                        <button class="btn btn-primary" onclick="toggleDescription('desc4')">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/image5.jpg" class="card-img-top" alt="Imagem do Monumento 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Monumento 5</h5>
+                        <p class="card-text hidden" id="desc5">Descrição breve do monumento ou atração turística.</p>
+                        <button class="btn btn-primary" onclick="toggleDescription('desc5')">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/image6.jpg" class="card-img-top" alt="Imagem do Monumento 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Monumento 6</h5>
+                        <p class="card-text hidden" id="desc6">Descrição breve do monumento ou atração turística.</p>
+                        <button class="btn btn-primary" onclick="toggleDescription('desc6')">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDescription(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === 'none' || element.style.display === '') {
+                element.style.display = 'block'; 
+            } else {
+                element.style.display = 'none'; 
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

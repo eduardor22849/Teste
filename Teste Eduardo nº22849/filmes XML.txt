@@ -1,0 +1,52 @@
+<registro>
+  <atores>
+    <ator>
+      <nome>Robert Downey Jr.</nome>
+      <dataNascimento>1965-04-04</dataNascimento>
+      <filmes>
+        <filme>
+          <titulo>Iron Man</titulo>
+          <anoLancamento>2008</anoLancamento>
+        </filme>
+        <filme>
+          <titulo>Sherlock Holmes</titulo>
+          <anoLancamento>2009</anoLancamento>
+        </filme>
+      </filmes>
+    </ator>
+    <ator>
+      <nome>Scarlett Johansson</nome>
+      <dataNascimento>1984-11-22</dataNascimento>
+      <filmes>
+        <filme>
+          <titulo>Lost in Translation</titulo>
+          <anoLancamento>2003</anoLancamento>
+        </filme>
+        <filme>
+          <titulo>The Avengers</titulo>
+          <anoLancamento>2012</anoLancamento>
+        </filme>
+      </filmes>
+    </ator>
+  </atores>
+  <filmes>
+    <filme>
+      <titulo>Iron Man</titulo>
+      <anoLancamento>2008</anoLancamento>
+      <atores>
+        <ator>Robert Downey Jr.</ator>
+        <ator>Gwyneth Paltrow</ator>
+      </atores>
+    </filme>
+    <filme>
+      <titulo>The Avengers</titulo>
+      <anoLancamento>2012</anoLancamento>
+      <atores>
+        <ator>Robert Downey Jr.</ator>
+        <ator>Scarlett Johansson</ator>
+        <ator>Chris Evans</ator>
+      </atores>
+    </filme>
+  </filmes>
+</registro>
+

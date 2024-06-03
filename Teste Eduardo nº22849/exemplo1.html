@@ -1,0 +1,8 @@
+<div class="commonClass">Div 1</div>
+<span class="commonClass">Span 1</span>
+<div class="commonClass">Div 2</div>
+<script>
+  var elements = document.getElementsByClassName("commonClass");
+  console.log(elements); // HTMLCollection(3) [div.commonClass, span.commonClass, div.commonClass]
+  console.log(elements[1].textContent); // "Span 1"
+</script>

@@ -1,0 +1,51 @@
+{
+  "atores": [
+    {
+      "nome": "Robert Downey Jr.",
+      "dataNascimento": "1965-04-04",
+      "filmes": [
+        {
+          "titulo": "Iron Man",
+          "anoLancamento": 2008
+        },
+        {
+          "titulo": "Sherlock Holmes",
+          "anoLancamento": 2009
+        }
+      ]
+    },
+    {
+      "nome": "Scarlett Johansson",
+      "dataNascimento": "1984-11-22",
+      "filmes": [
+        {
+          "titulo": "Lost in Translation",
+          "anoLancamento": 2003
+        },
+        {
+          "titulo": "The Avengers",
+          "anoLancamento": 2012
+        }
+      ]
+    }
+  ],
+  "filmes": [
+    {
+      "titulo": "Iron Man",
+      "anoLancamento": 2008,
+      "atores": [
+        "Robert Downey Jr.",
+        "Gwyneth Paltrow"
+      ]
+    },
+    {
+      "titulo": "The Avengers",
+      "anoLancamento": 2012,
+      "atores": [
+        "Robert Downey Jr.",
+        "Scarlett Johansson",
+        "Chris Evans"
+      ]
+    }
+  ]
+}

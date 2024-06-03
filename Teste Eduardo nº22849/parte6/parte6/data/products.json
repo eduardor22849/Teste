@@ -1,0 +1,57 @@
+// controllers/productsController.js
+const products = require('/data/products.json');
+
+exports.getAllProducts = (req, res) => {
+    res.json(products);
+};
+
+exports.addProduct = (req, res) => {
+    const newProduct = req.body;
+    //adiciona o novo produto
+    products.push(newProduct);
+    //codigo 201 que indica sucesso na inserção do produto
+    res.status(201).send('Product added');
+};
+
+exports.getProductById = (req, res) => {
+    const product = products.find(p => p.id === parseInt(req.params.id));
+    if (product) {
+        res.json(product);
+    } else {
+        res.status(404).send('Product not found');
+    }
+};
+
+exports.updateProduct = (req, res) => {
+    const product = products.find(p => p.id === parseInt(req.params.id));
+    if (product) {
+        Object.assign(product, req.body);
+        res.send('Product updated');
+    } else {
+        res.status(404).send('Product not found');
+    }
+};
+
+exports.deleteProduct = (req, res) => {
+    const index = products.findIndex(p => p.id === parseInt(req.params.id));
+    if (index !== -1) {
+        products.splice(index, 1);
+        res.send('Product deleted');
+    } else {
+        res.status(404).send('Product not found');
+    }
+};
+[
+    {
+        "id": 1,
+        "name": "Product 1",
+        "price": 100,
+        "description": "Description of product 1"
+    },
+    {
+        "id": 2,
+        "name": "Product 2",
+        "price": 150,
+        "description": "Description of product 2"
+    }
+]

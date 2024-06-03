@@ -1,0 +1,8 @@
+Linhas 1-3: Importam as dependências necessárias e criam um router usando o Express.
+Linha 5: Define uma rota para obter todos os produtos. Quando um usuário faz uma requisição GET para a raiz do caminho de produtos (/), productsController.getAllProducts é chamado.
+Linha 8: Define uma rota para adicionar um novo produto. Para requisições POST para a raiz, o método addProduct do controller é chamado.
+Linha 11: Rota para obter um produto específico pelo ID, usando o método GET. O :id na URL indica que é um parâmetro.
+Linha 14: Rota para atualizar um produto existente pelo ID, usando o método PUT.
+Linha 17: Rota para deletar um produto pelo ID, usando o método DELETE.
+Linha 19: Exporta o router para que possa ser utilizado em outras partes do aplicativo.
+

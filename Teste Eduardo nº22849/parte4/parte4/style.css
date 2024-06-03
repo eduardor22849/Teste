@@ -1,0 +1,32 @@
+table {
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.brand1 {
+    background-color: #f4f4f4;
+    color: #333;
+}
+.brand2 {
+    background-color: #e0e0e0;
+    color: #000;
+}
+.brand3 {
+    background-color: #d0d0f0;
+    color: #202040;
+}
+.brand4 {
+    background-color: #f0d0d0;
+    color: #402020;
+}
+img {
+    max-width: 100px;
+    height: auto;
+}
